@@ -15,11 +15,12 @@ $siggreen: #76BD99;
             font-weight: bold;
         }
     }
-        
-    .navbar-header > a:hover {
-        color: $siggreen;
-        transition: .5s ease;
-    }
+}
+
+a:hover {
+    color: $siggreen;
+    transition: .5s ease;
+    text-decoration: none;
 }
 
 body {
@@ -47,6 +48,16 @@ h2 {
 p {
     font-size: 70%;
     text-align: left
+}
+
+a {
+    color: $siggreen;
+}
+
+a:hover {
+    transition: .5s ease;
+    opacity: 0.6;
+    color: $siggreen;
 }
 
 img {
