@@ -33,7 +33,7 @@ h1, h2 {
 
 h1 {
   letter-spacing: 1.3rem;
-  font-size: calc(4.25rem + ((1vw - 0.48rem) * 1.5));
+  font-size: calc(3.125rem + ((1vw - 3px) * 1.5432));
 }
 
 h2 {
