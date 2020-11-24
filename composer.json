@@ -1,0 +1,7 @@
+{
+    "name": "vendor/name",
+    "require": {
+        "gocardless/gocardless-pro": "^4.8",
+        "vlucas/phpdotenv": "^5.2"
+    }
+}
