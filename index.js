@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let stuck = title.offsetTop;
     const copyButton = document.querySelector('#copy');
     copyButton.addEventListener('click', ()=> copyToClipboard(document.querySelector('#email')));
-    copyButton.addEventListener('mouseout', ()=> tooltipOut());
+    copyButton.addEventListener('mouseleave', ()=> tooltipOut());
+
+    const arrow = document.querySelector('#scroll');
+    arrow.addEventListener('click', ()=> scrollTo('portfolio'));
     
     window.onscroll = () => {
         if (window.pageYOffset >= stuck) {
@@ -36,4 +39,10 @@ function copyToClipboard(element) {
 
 function tooltipOut() {
     document.querySelector('.tooltiptext').innerHTML = 'Copy to clipboard';
+}
+
+function scrollTo(place){
+    let url = location.href;
+    location.href = '#' + place;
+    history.replaceState(null, null, url);
 }

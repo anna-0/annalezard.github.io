@@ -13,11 +13,6 @@ $block: #1c5251;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
 
-@keyframes shrink {
-    0% {font-size: 10vh;}
-    100% {font-size: 5vh; line-height: 80%;}
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -42,7 +37,7 @@ h2 {
     letter-spacing: 0.3rem;
     line-height: 80%;
     text-align: center;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -88,7 +83,7 @@ height: 90vh;
 
     #subheading {
         font-weight: 300;
-        color: $darkteal;
+        color: $teal;
         font-size: 1.5rem;
         text-align: left;
         padding: 15px;
@@ -117,6 +112,10 @@ height: 90vh;
     }
   }
 
+#scroll {
+    cursor: pointer;
+}
+
 #arrow {
     display: block;
     margin: 0 auto 1em auto;
@@ -133,6 +132,10 @@ height: 90vh;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
   }
+
+#portfolio {
+    height: 2.5rem;
+}
 
 .page1 {
     min-height: 100vh;
@@ -193,8 +196,8 @@ height: 90vh;
     float: left;
 }
 
-.col {
-    text-align: center;
+.center {
+    margin-bottom: -2.2em;
 }
 
 .right {

@@ -1,23 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap");
-@-webkit-keyframes shrink {
-  0% {
-    font-size: 10vh;
-  }
-  100% {
-    font-size: 5vh;
-    line-height: 80%;
-  }
-}
-@keyframes shrink {
-  0% {
-    font-size: 10vh;
-  }
-  100% {
-    font-size: 5vh;
-    line-height: 80%;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +23,7 @@ h2 {
   letter-spacing: 0.3rem;
   line-height: 80%;
   text-align: center;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -93,7 +74,7 @@ h3 {
 
 .title #subheading {
   font-weight: 300;
-  color: #287372;
+  color: #33abab;
   font-size: 1.5rem;
   text-align: left;
   padding: 15px;
@@ -130,6 +111,10 @@ h3 {
   }
 }
 
+#scroll {
+  cursor: pointer;
+}
+
 #arrow {
   display: block;
   margin: 0 auto 1em auto;
@@ -144,6 +129,10 @@ h3 {
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+#portfolio {
+  height: 2.5rem;
 }
 
 .page1 {
@@ -205,8 +194,8 @@ h3 {
   float: left;
 }
 
-.col {
-  text-align: center;
+.center {
+  margin-bottom: -2.2em;
 }
 
 .right {
