@@ -223,6 +223,10 @@ h3 {
   color: #59bdb8;
 }
 
+.icontext:hover > * {
+  color: #59bdb8;
+}
+
 .grid {
   display: -ms-inline-grid;
   display: inline-grid;

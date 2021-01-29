@@ -225,6 +225,10 @@ height: 90vh;
     color: $lightteal;
 }
 
+.icontext:hover > * {
+    color: $lightteal;
+}
+
 .grid {
     display: inline-grid;
     grid-template-columns: auto auto;
