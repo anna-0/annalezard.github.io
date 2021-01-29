@@ -311,13 +311,13 @@ height: 90vh;
     text-align: center;
     margin: 2em 0;
 
-    svg {
+    .iconify {
         font-size: 2rem;
         color: $teal;
         margin-right: 0.5em;
     }
 
-    svg:hover {
+    .iconify:hover {
         color: $otherlight;
         transition: all ease-in-out .2s;
     }
