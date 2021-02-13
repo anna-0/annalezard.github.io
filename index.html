@@ -1,126 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Anna Lezard</title>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="icon" type="image/png" href="favicon.png">
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <div class="title">
-            <h1 id="title" class="start">Anna<br>Lezard</h1>
-            <h2 class="start" id="subheading">Web Developer</h2>
-        </div>
-        <div class="bounce">
-            <a id="scroll"><span class="iconify" id="arrow" data-icon="fa-solid:angle-down" data-inline="false"></span></a>
-        </div>
-        <div id="portfolio"></div>
-        <div class="page1">
-            <h2 id="projects" class="projectstart">Projects</h2>
-            <div class="wrapper">
-                <div class="project">
-                    <h3>St James Garlickhythe</h3>
-                    <div class="techs">
-                        <span class="iconify tech" data-icon="cib:html5-shield" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:css3-shiled" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:django" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:heroku" data-inline="false"></span>
-                    </div>
-                    <img class="projectimg" alt="Screenshot of homepage for St James Garlickhythe church in City of London" src="portfolio-sjg32.jpg"/>
-                    <div class="outlinks row">
-                        <div class="center">
-                            <div class="icontext">
-                                <a href="http://stjamesgarlickhythe.org" target="_blank" class="viewlink"><span class="iconify view" data-icon="ant-design:desktop-outlined" data-inline="false"></span>
-                                <span class="view">Visit site</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Crowdfunding page</h3>
-                    <div class="techs">
-                        <span class="iconify tech" data-icon="cib:html5-shield" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:css3-shiled" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:php" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:cc-stripe" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:javascript" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:wordpress" data-inline="false"></span>
-                    </div>
-                    <img class="projectimg" alt="Screenshot of crowdfunding page on Roman Road LDN online magazine in East London" src="portfolio-rrl.png"/>
-                    <div class="outlinks row">
-                        <div class="left">
-                            <a href="https://github.com/anna-0/crowdfunder" target="_blank" class="viewlink"><span class="iconify view" data-icon="cib:github" data-inline="false"></span>
-                            <span class="view">View code</span></a>
-                        </div>
-                        <div class="right">
-                            <a href="https://romanroadlondon.com/campaign" target="_blank" class="viewlink"><span class="iconify view" data-icon="ant-design:desktop-outlined" data-inline="false"></span>
-                            <span class="view">Visit site</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Social network</h3>
-                    <div class="techs">
-                        <span class="iconify tech" data-icon="cib:html5-shield" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:css3-shiled" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:javascript" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:django" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:bootstrap" data-inline="false"></span>
-                    </div>
-                    <img class="projectimg" alt="Screenshot of social network project" src="portfolio-network.png"/>
-                    <div class="outlinks row">
-                        <div class="left">
-                            <a href="https://youtu.be/sTu3svPFkH8" target="_blank" class="viewlink"><span class="iconify view" data-icon="cib:youtube" data-inline="false"></span>
-                            <span class="view">View demo</span></a>
-                        </div>
-                        <div class="right">
-                            <a href="https://github.com/anna-0/cs50/tree/master/cs50w/network" target="_blank" class="viewlink"><span class="iconify view" data-icon="cib:github" data-inline="false"></span>
-                            <span class="view">View code</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Patron tracker</h3>
-                    <div class="techs">
-                        <span class="iconify tech" data-icon="cib:html5-shield" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:css3-shiled" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:flask" data-inline="false"></span>
-                        <span class="iconify tech" data-icon="cib:bootstrap" data-inline="false"></span>
-                    </div>
-                    <img class="projectimg" alt="Screenshot of monthly patron tracking project" src="portfolio-patrons.png"/>
-                    <div class="outlinks row">
-                        <div class="left">
-                            <a href="https://www.youtube.com/watch?v=uYHegMW7ReQ" target="_blank" class="viewlink"><span class="iconify view" data-icon="cib:youtube" data-inline="false"></span>
-                            <span class="view">View demo</span></a>
-                        </div>
-                        <div class="right">
-                            <a href="https://github.com/anna-0/cs50/tree/master/cs50x/project" target="_blank" class="viewlink"><span class="iconify view" data-icon="cib:github" data-inline="false"></span>
-                            <span class="view">View code</span></a>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anna Lezard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script
+      src="https://code.iconify.design/1/1.0.7/iconify.min.js"
+      defer
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1 id="title" class="start">Anna<br />Lezard</h1>
+      <h2 class="start" id="subheading">Web Developer</h2>
+    </div>
+    <div class="bounce">
+      <a id="scroll"
+        ><span
+          class="iconify"
+          id="arrow"
+          data-icon="fa-solid:angle-down"
+          data-inline="false"
+        ></span
+      ></a>
+    </div>
+    <div id="portfolio"></div>
+    <div class="page1">
+      <h2 id="projects" class="projectstart">Projects</h2>
+      <div class="wrapper">
+        <div class="project">
+          <h3>St James Garlickhythe</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">HTML5</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:html5-shield"
+                data-inline="false"
+              >
+              </span>
             </div>
-        </div>
-        <div class="page2">
-            <h2>Contact</h2>
-            <div class="grid">
-                <div class="item" id="email">&nbsp;anna@annalezard.com</div>
-                <div class="tooltip">
-                    <div class="item" id="copy">
-                        <span class="tooltiptext">Copy to clipboard</span>
-                        <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="none"><path d="M8 2a1 1 0 0 0 0 2h2a1 1 0 1 0 0-2H8z" fill="white"/><path d="M3 5a2 2 0 0 1 2-2a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3a2 2 0 0 1 2 2v6h-4.586l1.293-1.293a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L10.414 13H15v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z" fill="white"/><path d="M15 11h2a1 1 0 1 1 0 2h-2v-2z" fill="white"/></g></svg>
-                    </div>
-                </div>
+            <div class="techtip">
+              <span class="techtiptext">CSS3</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:css3-shiled"
+                data-inline="false"
+              ></span>
             </div>
-            <div class="social">
-                <a href="//linkedin.com/in/anna-lezard" target="_blank"><span class="iconify" data-icon="entypo-social:linkedin-with-circle" data-inline="false"></span></a>
-                <a href="//github.com/anna-0" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a>
-                <a href="//twitter.com/annaspitsfires" target="_blank"><span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span></a>
+            <div class="techtip">
+              <span class="techtiptext">Django</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:django"
+                data-inline="false"
+              ></span>
             </div>
+            <div class="techtip">
+              <span class="techtiptext">Heroku</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:heroku"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of homepage for St James Garlickhythe church in City of London"
+            src="portfolio-sjg32.jpg"
+          />
+          <div class="outlinks row">
+            <div class="center">
+              <div class="icontext">
+                <a
+                  href="http://stjamesgarlickhythe.org"
+                  target="_blank"
+                  class="viewlink"
+                  ><span
+                    class="iconify view"
+                    data-icon="ant-design:desktop-outlined"
+                    data-inline="false"
+                  ></span>
+                  <span class="view">Visit site</span></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <script data-goatcounter="https://annalyticslezard.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    </body>
+        <div class="project">
+          <h3>Crowdfunding page</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">HTML5</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:html5-shield"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">CSS3</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:css3-shiled"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">PHP</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:php"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Stripe API</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:cc-stripe"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">JavaScript</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:javascript"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">WordPress</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:wordpress"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of crowdfunding page on Roman Road LDN online magazine in East London"
+            src="portfolio-rrl.png"
+          />
+          <div class="outlinks row">
+            <div class="left">
+              <a
+                href="https://github.com/anna-0/crowdfunder"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:github"
+                  data-inline="false"
+                ></span>
+                <span class="view">View code</span></a
+              >
+            </div>
+            <div class="right">
+              <a
+                href="https://romanroadlondon.com/campaign"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="ant-design:desktop-outlined"
+                  data-inline="false"
+                ></span>
+                <span class="view">Visit site</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Social network front-end + API</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">HTML5</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:html5-shield"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">CSS3</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:css3-shiled"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">JavaScript</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:javascript"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Django</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:django"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Bootstrap</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:bootstrap"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of social network project"
+            src="portfolio-network.png"
+          />
+          <div class="outlinks row">
+            <div class="left">
+              <a
+                href="https://youtu.be/sTu3svPFkH8"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:youtube"
+                  data-inline="false"
+                ></span>
+                <span class="view">View demo</span></a
+              >
+            </div>
+            <div class="right">
+              <a
+                href="https://github.com/anna-0/cs50/tree/master/cs50w/network"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:github"
+                  data-inline="false"
+                ></span>
+                <span class="view">View code</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Email SPA for Python API</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">HTML5</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:html5-shield"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">CSS3</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:css3-shiled"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">JavaScript</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:javascript"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Django</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:django"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Bootstrap</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:bootstrap"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of javascript email project"
+            src="portfolio-mail.png"
+          />
+          <div class="outlinks row">
+            <div class="left">
+              <a
+                href="https://youtu.be/XkjJ1pg8IaI"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:youtube"
+                  data-inline="false"
+                ></span>
+                <span class="view">View demo</span></a
+              >
+            </div>
+            <div class="right">
+              <a
+                href="https://github.com/anna-0/cs50/tree/master/cs50w/mail"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:github"
+                  data-inline="false"
+                ></span>
+                <span class="view">View code</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Patron tracker</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">HTML5</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:html5-shield"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">CSS3</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:css3-shiled"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Flask</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:flask"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="techtip">
+              <span class="techtiptext">Bootstrap</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:bootstrap"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of monthly patron tracking project"
+            src="portfolio-patrons.png"
+          />
+          <div class="outlinks row">
+            <div class="left">
+              <a
+                href="https://www.youtube.com/watch?v=uYHegMW7ReQ"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:youtube"
+                  data-inline="false"
+                ></span>
+                <span class="view">View demo</span></a
+              >
+            </div>
+            <div class="right">
+              <a
+                href="https://github.com/anna-0/cs50/tree/master/cs50x/project"
+                target="_blank"
+                class="viewlink"
+                ><span
+                  class="iconify view"
+                  data-icon="cib:github"
+                  data-inline="false"
+                ></span>
+                <span class="view">View code</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Lady Lane Market</h3>
+          <div class="techs">
+            <div class="techtip">
+              <span class="techtiptext">WordPress</span>
+              <span
+                class="iconify tech"
+                data-icon="cib:wordpress"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+          <img
+            class="projectimg"
+            alt="Screenshot of homepage for Lady Lane Market in East London"
+            src="llm.jpg"
+          />
+          <div class="outlinks row">
+            <div class="center">
+              <div class="icontext">
+                <a
+                  href="http://ladylanemarket.co.uk"
+                  target="_blank"
+                  class="viewlink"
+                  ><span
+                    class="iconify view"
+                    data-icon="ant-design:desktop-outlined"
+                    data-inline="false"
+                  ></span>
+                  <span class="view">Visit site</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page2">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="item" id="email">&nbsp;anna@annalezard.com</div>
+        <div class="tooltip">
+          <div
+            class="item"
+            role="button"
+            tabindex="0"
+            aria-pressed="false"
+            id="copy"
+          >
+            <span class="tooltiptext">Copy to clipboard</span>
+            <svg
+              class="clipboard"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              focusable="false"
+              width="2em"
+              height="2em"
+              style="
+                -ms-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+              "
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 20 20"
+            >
+              <g fill="none">
+                <path d="M8 2a1 1 0 0 0 0 2h2a1 1 0 1 0 0-2H8z" fill="white" />
+                <path
+                  d="M3 5a2 2 0 0 1 2-2a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3a2 2 0 0 1 2 2v6h-4.586l1.293-1.293a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L10.414 13H15v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z"
+                  fill="white"
+                />
+                <path d="M15 11h2a1 1 0 1 1 0 2h-2v-2z" fill="white" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <a href="//linkedin.com/in/anna-lezard" target="_blank"
+          ><span
+            class="iconify"
+            data-icon="entypo-social:linkedin-with-circle"
+            data-inline="false"
+          ></span
+        ></a>
+        <a href="//github.com/anna-0" target="_blank"
+          ><span
+            class="iconify"
+            data-icon="ant-design:github-filled"
+            data-inline="false"
+          ></span
+        ></a>
+        <a href="//twitter.com/annaspitsfires" target="_blank"
+          ><span
+            class="iconify"
+            data-icon="ant-design:twitter-circle-filled"
+            data-inline="false"
+          ></span
+        ></a>
+      </div>
+    </div>
+    <script
+      data-goatcounter="https://annalyticslezard.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>

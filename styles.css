@@ -3,14 +3,17 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #1a2e34;
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
@@ -50,11 +53,11 @@ h3 {
 .title .start {
   top: 60%;
   font-size: 10vh;
-  line-height: .8;
-  -webkit-transition: line-height .1s ease-in;
-  transition: line-height .1s ease-in;
-  -webkit-transition: font-size .1s ease-in;
-  transition: font-size .1s ease-in;
+  line-height: 0.8;
+  -webkit-transition: line-height 0.1s ease-in;
+  transition: line-height 0.1s ease-in;
+  -webkit-transition: font-size 0.1s ease-in;
+  transition: font-size 0.1s ease-in;
   position: relative;
 }
 
@@ -62,11 +65,11 @@ h3 {
   position: fixed;
   top: 0;
   font-size: 5vh;
-  line-height: .8;
-  -webkit-transition: line-height .1s ease-out;
-  transition: line-height .1s ease-out;
-  -webkit-transition: font-size .1s ease-out;
-  transition: font-size .1s ease-out;
+  line-height: 0.8;
+  -webkit-transition: line-height 0.1s ease-out;
+  transition: line-height 0.1s ease-out;
+  -webkit-transition: font-size 0.1s ease-out;
+  transition: font-size 0.1s ease-out;
   background-color: #1a2e34;
   width: 100%;
   z-index: 10;
@@ -82,7 +85,11 @@ h3 {
 }
 
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -97,7 +104,11 @@ h3 {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -164,11 +175,9 @@ h3 {
 }
 
 .project {
-  background-color: #1c5251;
+  background-color: #216160;
   padding: 1em;
   margin-bottom: 2em;
-  -webkit-box-shadow: 1px 1px 5px 1px #21645c;
-          box-shadow: 1px 1px 5px 1px #21645c;
 }
 
 .project h3 {
@@ -254,7 +263,7 @@ h3 {
 #email {
   background-color: #21645c;
   color: #d6eeed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 0.2em;
   font-size: calc(15px + (15 - 13) * ((100vw - 250px) / (1000 - 300)));
@@ -294,6 +303,12 @@ h3 {
   transition: opacity 0.3s;
 }
 
+.tooltip .tooltiptech {
+  left: 80%;
+  background-color: #1a2e34;
+  color: #d6eeed;
+}
+
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -320,16 +335,47 @@ h3 {
   margin: 2em 0;
 }
 
-.social svg {
+.social .iconify {
   font-size: 2rem;
   color: #33abab;
   margin-right: 0.5em;
 }
 
-.social svg:hover {
+.social .iconify:hover {
   color: #94dcd4;
-  -webkit-transition: all ease-in-out .2s;
-  transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.techtip {
+  position: relative;
+  display: inline-block;
+}
+
+.techtip .techtiptext {
+  background-color: #1a2e34;
+  font-family: "Montserrat", "sans-serif";
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #d6eeed;
+  opacity: 0;
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 5px 1em;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  left: 130%;
+  margin-left: -60px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.techtip:hover .techtiptext,
+.techtip:focus .techtiptext {
+  opacity: 0.9;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 @media screen and (min-width: 800px) {
