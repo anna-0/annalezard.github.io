@@ -7,7 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a2e34;
+  background-color: #1f2933;
 }
 
 h1,
@@ -37,12 +37,16 @@ h3 {
   letter-spacing: 0.05rem;
 }
 
+h3 .subheadspan {
+  font-weight: 200;
+}
+
 .title {
   height: 90vh;
 }
 
 .title #title {
-  color: #d6eeed;
+  color: #f5f7fa;
   opacity: 0.9;
   letter-spacing: 0.5vh;
   text-transform: uppercase;
@@ -70,18 +74,51 @@ h3 {
   transition: line-height 0.1s ease-out;
   -webkit-transition: font-size 0.1s ease-out;
   transition: font-size 0.1s ease-out;
-  background-color: #1a2e34;
+  background-color: #1f2933;
   width: 100%;
   z-index: 10;
 }
 
 .title #subheading {
   font-weight: 300;
-  color: #33abab;
+  color: #9aa5b1;
   font-size: 1.5rem;
   text-align: left;
   padding: 15px;
   margin-top: -1rem;
+}
+
+.title .aviDiv {
+  -webkit-clip-path: ellipse(41% 31% at 50% 50%);
+          clip-path: ellipse(41% 31% at 50% 50%);
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  position: fixed;
+  right: 0;
+  margin-right: 0.5rem;
+  z-index: 100;
+}
+
+.avi {
+  height: 7rem;
+  margin: 0.5rem;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  margin-top: 1rem;
+}
+
+.stuckImg {
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  height: 4.5rem;
+}
+
+.stuckDiv {
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  margin-top: -0.5rem;
 }
 
 @-webkit-keyframes bounce {
@@ -129,7 +166,7 @@ h3 {
 #arrow {
   display: block;
   margin: 0 auto 1em auto;
-  color: #d6eeed;
+  color: #f5f7fa;
   font-size: 3rem;
 }
 
@@ -148,48 +185,68 @@ h3 {
 
 .page1 {
   min-height: 100vh;
-  background-color: #2a847c;
+  background-color: #1f2933;
   padding: 4rem 1rem;
 }
 
 .page1 h2 {
-  color: #1a2e34;
+  color: #f5f7fa;
   font-weight: 300;
 }
 
 .page2 {
   min-height: 30vh;
   padding: 1rem;
-  background-color: #184544;
+  background-color: #121212;
   text-align: center;
 }
 
 .page2 h2 {
-  color: #d6eeed;
+  color: #f5f7fa;
 }
 
 .projectimg {
   width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .project {
-  background-color: #216160;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 1rem;
+  margin-bottom: 4em;
+  border: #9aa5b1 2px solid;
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(1px 1px 5px #ffffff60);
+          filter: drop-shadow(1px 1px 5px #ffffff60);
+  background-color: #1f2933;
 }
 
 .project h3 {
-  color: #d6eeed;
+  color: #f5f7fa;
   margin: 10px 0;
 }
 
+.project .project-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .tech {
-  color: #33abab;
+  color: #9aa5b1;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0.5em 0.2em 1em 0.2em;
+}
+
+.tech:hover {
+  color: #02dac5;
 }
 
 .outlinks {
@@ -216,7 +273,7 @@ h3 {
   height: 1.2rem;
   width: 1.2rem;
   font-size: 0.7rem;
-  color: #d6eeed;
+  color: #f5f7fa;
   margin: 0 0.1em;
   vertical-align: middle;
 }
@@ -229,11 +286,11 @@ h3 {
 }
 
 .viewlink span:hover {
-  color: #59bdb8;
+  color: #7b8794;
 }
 
 .icontext:hover > * {
-  color: #59bdb8;
+  color: #7b8794;
 }
 
 .grid {
@@ -261,8 +318,8 @@ h3 {
 }
 
 #email {
-  background-color: #21645c;
-  color: #d6eeed;
+  background-color: #1f2933;
+  color: #f5f7fa;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 0.2em;
@@ -271,8 +328,8 @@ h3 {
 
 #copy {
   font-size: calc(15px + (15 - 13) * ((100vw - 250px) / (1000 - 300)));
-  background-color: #33abab;
-  color: #1a2e34;
+  background-color: #9aa5b1;
+  color: #1f2933;
 }
 
 #copy:hover {
@@ -289,8 +346,8 @@ h3 {
   width: 4em;
   font-size: 1rem;
   font-family: sans-serif;
-  background-color: #d6eeed;
-  color: #1a2e34;
+  background-color: #f5f7fa;
+  color: #1f2933;
   text-align: center;
   border-radius: 1rem;
   padding: 1rem;
@@ -305,8 +362,8 @@ h3 {
 
 .tooltip .tooltiptech {
   left: 80%;
-  background-color: #1a2e34;
-  color: #d6eeed;
+  background-color: #1f2933;
+  color: #f5f7fa;
 }
 
 .tooltip .tooltiptext::after {
@@ -317,7 +374,7 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #d6eeed transparent transparent transparent;
+  border-color: #f5f7fa transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -337,12 +394,12 @@ h3 {
 
 .social .iconify {
   font-size: 2rem;
-  color: #33abab;
+  color: #9aa5b1;
   margin-right: 0.5em;
 }
 
 .social .iconify:hover {
-  color: #94dcd4;
+  color: #02dac5;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
@@ -353,11 +410,11 @@ h3 {
 }
 
 .techtip .techtiptext {
-  background-color: #1a2e34;
+  background-color: #1f2933;
   font-family: "Montserrat", "sans-serif";
   letter-spacing: 1px;
   font-size: 12px;
-  color: #d6eeed;
+  color: #f5f7fa;
   opacity: 0;
   text-align: center;
   border-radius: 0.5em;
@@ -380,15 +437,12 @@ h3 {
 
 @media screen and (min-width: 800px) {
   .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 35% 35%;
-        grid-template-columns: 35% 35%;
-    -webkit-column-gap: 2em;
-            column-gap: 2em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .project {
+    padding: 1em 2em 2em 2em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
